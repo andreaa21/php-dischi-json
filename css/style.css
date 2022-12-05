@@ -9,10 +9,15 @@
     border: 1px solid red;
 }
 
+img{
+    width: 100%;
+}
+
 .wrapper{
     height: 100vh;
     background-color: rgb(50, 73, 117);
     color: white;
+    overflow-y: scroll;
 }
 
 header{
@@ -25,3 +30,23 @@ main{
     height: calc(100vh - 80px);
 }
 
+
+.record{
+    padding: 2rem;
+    margin: 1.5rem 2rem;
+    background-color: rgb(23, 34, 54);
+    width: 300px;
+    border-radius: 20px;
+
+}
+
+.card-image{
+    overflow: hidden;
+}
+
+.title, .year{
+    font-weight: bold;
+}
+.author{
+    font-size: .7rem;
+}

@@ -31,8 +31,23 @@
             </header>
             <main>
                 <div class="container">
-                    <div class="row">
-                        <div v-for="(record, index) in records" :key="index" class="col card">card</div>
+                    <div class="row row-cols-3 justify-content-center d-flex flex-wrap">
+                        <div v-for="(record, index) in records" :key="index" class="col record d-flex flex-column justify-content-between">
+                            <div class="card-image mb-3">
+                                <img :src="record.poster" :alt="record.author">
+                            </div>
+                            <div class="card-text d-flex flex-column text-center">
+                                <span class="title">
+                                    {{record.title}}
+                                </span>
+                                <span class="author">
+                                    {{record.author}}
+                                </span>
+                                <span class="year">
+                                    {{record.year}}
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>

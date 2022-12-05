@@ -4,7 +4,8 @@ createApp({
 
     data(){
         return{
-            apiUrl:'server.php'
+            apiUrl:'server.php',
+            records: []
         }
     },
     methods:{
