@@ -24,7 +24,16 @@
 <body>
     <div class="wrapper">
         <div id="app">
+            <header class="d-flex align-items-center">
+                <h1>
+                    Dischi PHP
+                </h1>
+            </header>
+            <main>
+                <div class="container">
 
+                </div>
+            </main>
         </div>
     </div>
 </body>
