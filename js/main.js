@@ -8,15 +8,16 @@ createApp({
         }
     },
     methods:{
-        getRecord(){
+        getRecords(){
             axios.get(this.apiUrl)
             .then(result => {
-                console.log(result.data);
+                this.records = result.data;
+                console.log(this.records);
             })
         }
     },
     mounted(){
-        console.log('----------');
+        this.getRecords();
     }
 
 }).mount('#app');

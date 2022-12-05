@@ -31,7 +31,9 @@
             </header>
             <main>
                 <div class="container">
-
+                    <div class="row">
+                        <div v-for="(record, index) in records" :key="index" class="col card">card</div>
+                    </div>
                 </div>
             </main>
         </div>
@@ -40,5 +42,6 @@
 
 
 
+<script src="js/main.js"></script>
 
 </html>
